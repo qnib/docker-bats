@@ -1,4 +1,4 @@
-FROM qnib/syslog
+FROM qnib/syslog:cos7
 
 RUN yum install -y bsdtar
 RUN curl -fsL https://github.com/sstephenson/bats/archive/master.zip |bsdtar xf - -C /opt/ && \
